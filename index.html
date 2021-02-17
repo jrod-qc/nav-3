@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+     <!-- This is the quote modal -->
+     <div class="quote-modal">
+        <div class="modal-form">
+            <div class="modal-header">
+                <p class="exitIcon"><i class="far fa-times-circle"></i></p>
+                <h3>Quote Form</h3>
+            </div>
+            <form action="/thank-you" method="POST">
+                <input type="text" name="firstName" placeholder="First Name" required><br>
+                <input type="text" name="lastName" placeholder="Last Name" required><br>
+                <input type="text" name="squareFeet" placeholder="Square Foot of Home"><br>
+                <input type="text" name="address" placeholder="Address"><br>
+                <input type="text" name="zip" placeholder="Zip"><br>
+                <input type="text" name="city" placeholder="City"><br>
+                <input type="text" name="state" placeholder="State"><br>
+                <input type="text" name="phoneNumber" placeholder="Phone Number" required><br>
+                <input type="text" name="Email" placeholder="Email"><br><br>
+                <label>Indicate the date you would ideally like us to come. We will contact you shortly to finalize an appointment time.</label><br><br>
+                <label for="date">Select a date you prefer:</label><br>
+                <input type="date" name="date" id="date"><br><br>
+                <label for="contact-by">I'd prefer to be contacted by:</label><br>
+                <select name="contact-by" id="contact-by">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select><br><br>
+                <label for="how-did-you-hear-about-us">How did you hear about us?</label><br>
+                <select name="how-did-you-hear-about-us" id="how-did-you-hear-about-us">
+                    <option value="google-search">Google Search</option>
+                    <option value="bing-search">Bing Search</option>
+                    <option value="yahoo-search">Yahoo Search</option>
+                    <option value="mail-flyer">Mail Flyer</option>
+                    <option value="word-of-mouth">Word of mouth</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                <textarea name="notes" rows="5" placeholder="Comments"></textarea><br>
+                <button type="submit">Get Quote!</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="indicator-logo-outside">
+        <div class="main-logo-outside">
+        </div>
+    </div>
+    <div class="section-indicator">
+        <div class="indicator-logo">
+            <p class="close-btn"><i class="fas fa-times"></i></p>
+            <div class="main-logo">
+
+            </div>
+        </div>
+        <ul>
+            <li><a class="clicked-anchor" href="#hero">Hero</a></li>
+            <li><a class="clicked-anchor" href="#rebate">Rebate</a></li>
+            <li><a class="clicked-anchor" href="#benefits">Benefits</a></li>
+            <li><a class="clicked-anchor" href="#hiw">How it works</a></li>
+            <li><a class="clicked-anchor" href="#quote">Quote!</a></li>
+            <li><a class="clicked-anchor" href="#stealth">Stealth Pro</a></li>
+            <li><a class="clicked-anchor" href="#trident">Trident Pro</a></li>
+            <li><a class="clicked-anchor" href="#attic">Attic Fans</a></li>
+            <li><a class="clicked-anchor" href="#aboutUs">About Us</a></li>
+            <li><a class="clicked-anchor" href="#testimonials">Testimonials</a></li>
+            <li><a class="clicked-anchor" href="#pricing">Pricing</a></li>
+        </ul>
+    </div>
+
+    <div class="call-and-get-quote">
+        <ul>
+            <li><a class="phone-float-btn" href="tel:951-325-6340"><i class="fas fa-phone-alt"></i></a></li>
+            <li><a class="hero-btn form-float-btn" href="javascript:void(0);"><i class="fab fa-wpforms"></i></a></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
